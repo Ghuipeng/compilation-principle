@@ -1,0 +1,80 @@
+     token	     lexme	lineno	     scope	     value
+       INT	       int	     3
+        ID	         f	     3	         1	         3
+    LPAREN	         (	     3
+    RPAREN	         )	     3
+    LBRACE	         {	     3
+       INT	       int	     4
+        ID	         a	     4	       1-1	         4
+ SEMICOLON	         ;	     4
+        ID	         a	     5	       1-1	         4
+    ASSIGN	         =	     5
+   DECIMAL	         0	     5	          	         0
+ SEMICOLON	         ;	     5
+     WHILE	     while	     6
+    LPAREN	         (	     6
+        ID	         a	     6	       1-1	         4
+      LESS	         <	     6
+   DECIMAL	        10	     6	          	        10
+    RPAREN	         )	     6
+    LBRACE	         {	     6
+        ID	         a	     7	       1-1	         4
+    ASSIGN	         =	     7
+        ID	         a	     7	       1-1	         4
+       MUL	         *	     7
+   DECIMAL	      2345	     7	          	      2345
+ SEMICOLON	         ;	     7
+    RBRACE	         }	     8
+    RETURN	    return	     9
+        ID	         a	     9	       1-1	         4
+ SEMICOLON	         ;	     9
+    RBRACE	         }	    10
+       INT	       int	    12
+        ID	      main	    12	         1	        12
+    LPAREN	         (	    12
+    RPAREN	         )	    12
+    LBRACE	         {	    12
+       INT	       int	    13
+        ID	   _testid	    13	       1-2	        13
+ SEMICOLON	         ;	    13
+        ID	   _testid	    14	       1-2	        13
+    ASSIGN	         =	    14
+   DECIMAL	         0	    14	          	         0
+ SEMICOLON	         ;	    14
+        IF	        if	    15
+    LPAREN	         (	    15
+        ID	   _testid	    15	       1-2	        13
+     EQUAL	        ==	    15
+   DECIMAL	         0	    15	          	         0
+    RPAREN	         )	    15
+    LBRACE	         {	    15
+       INT	       int	    16
+        ID	   _testid	    16	     1-2-1	        16
+ SEMICOLON	         ;	    16
+       INT	       int	    17
+        ID	  _testid2	    17	     1-2-1	        17
+ SEMICOLON	         ;	    17
+        ID	  _testid1	    18	 undefined	         0
+    ASSIGN	         =	    18
+        ID	  _testid1	    18	 undefined	         0
+       ADD	         +	    18
+   DECIMAL	         1	    18	          	         1
+ SEMICOLON	         ;	    18
+    RBRACE	         }	    19
+    LBRACE	         {	    21
+       INT	       int	    22
+        ID	         a	    22	     1-2-2	        22
+ SEMICOLON	         ;	    22
+    RBRACE	         }	    23
+    LBRACE	         {	    24
+       INT	       int	    25
+        ID	         a	    25	     1-2-3	        25
+ SEMICOLON	         ;	    25
+    RBRACE	         }	    26
+       INT	       int	    27
+        ID	         b	    27	       1-2	        27
+ SEMICOLON	         ;	    27
+    RETURN	    return	    28
+   DECIMAL	         0	    28	          	         0
+ SEMICOLON	         ;	    28
+    RBRACE	         }	    29
